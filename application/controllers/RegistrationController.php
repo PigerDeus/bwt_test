@@ -3,7 +3,9 @@
   class RegistrationController {
 
     public function actionIndex() {
-      echo "RegistrationController actionRegistration";
+
+      require_once(ROOT.'/views/registration/index.php');
+
       return true;
     }
   }
