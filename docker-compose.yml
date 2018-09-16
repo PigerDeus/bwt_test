@@ -2,6 +2,7 @@ version: '3'
 services:
   php:
     build: ./php
+    container_name: php_app
     volumes:
       - ./application:/var/www/html
   nginx:
@@ -20,5 +21,6 @@ services:
       MYSQL_PASSWORD: app
     volumes:
       - database:/var/lib/mysql
+
 volumes:
   database:

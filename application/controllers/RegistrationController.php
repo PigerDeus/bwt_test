@@ -4,7 +4,7 @@
 
     public function actionIndex() {
 
-      require_once(ROOT.'/views/registration/index.php');
+      require_once(ROOT.'/views/registration.php');
 
       return true;
     }
